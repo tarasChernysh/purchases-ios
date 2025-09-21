@@ -39,7 +39,7 @@ public struct PaywallView: View {
     private var externalPurchaseHandler: PurchaseHandler
 
     private var purchaseHandler: PurchaseHandler {
-        paywallViewOwnsPurchaseHandler ? internalPurchaseHandler : externalPurchaseHandler
+        false//paywallViewOwnsPurchaseHandler ? internalPurchaseHandler : externalPurchaseHandler
     }
 
     @StateObject
