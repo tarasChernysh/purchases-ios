@@ -141,7 +141,7 @@ public struct PaywallView: View {
         )
     }
 
-    init(configuration: PaywallViewConfiguration, paywallViewOwnsPurchaseHandler: Bool = true) {
+    init(configuration: PaywallViewConfiguration, paywallViewOwnsPurchaseHandler: Bool = false) {
         self.paywallViewOwnsPurchaseHandler = paywallViewOwnsPurchaseHandler
         if paywallViewOwnsPurchaseHandler {
             self._internalPurchaseHandler = .init(wrappedValue: configuration.purchaseHandler)
